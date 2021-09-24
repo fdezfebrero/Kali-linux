@@ -1,0 +1,14 @@
+version: "3"
+ 
+services:
+   
+  Kali-linux:
+    image: kalilinux/kali-rolling:latest
+    volumes:
+      # Montamos o S.O.
+      - ./kali-linux:/var/local
+    expose:
+      - 80
+    ports:
+      - 8000:80
+   
